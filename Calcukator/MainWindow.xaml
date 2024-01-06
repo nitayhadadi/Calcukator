@@ -1,0 +1,49 @@
+﻿<Window x:Class="calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Math Game" Height="430" Width="712"
+        Background="#FFDDEEFF">
+    <!-- Light blue background for the window -->
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="400">
+            <Label Content="What is your name?"
+                   FontFamily="Arial"
+                   FontSize="18"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   Margin="10"/>
+            <TextBox x:Name="NameTextBox" 
+                     FontSize="16"
+                     Margin="10"
+                     Padding="5"/>
+            <Label Content="Grade (1-4)"
+                   FontFamily="Calibri"
+                   FontSize="18"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   Margin="10"/>
+            <TextBox x:Name="AgeTextBox" 
+                     TextChanged="AgeTextBox_TextChanged"
+                     FontSize="16"
+                     Margin="10"
+                     Padding="5"/>
+            <Button Content="Submit"
+                 Click="SubmitButton_Click"
+
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Margin="10"
+                    Padding="5"
+                    Background="DarkBlue"
+                    Foreground="White"
+                    BorderBrush="White"
+                    BorderThickness="2"/>
+            <Label Content="Math Game" 
+                   FontSize="36"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   Margin="20"/>
+        </StackPanel>
+    </Grid>
+</Window>
